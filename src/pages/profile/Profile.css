@@ -1,0 +1,184 @@
+/* Resetting page wrapper to take full screen */
+.profile-page-wrapper {
+  background-color: #0b0f19;
+  min-height: 100vh;
+  color: #f8fafc;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Navbar Style */
+.profile-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.back-link-btn {
+  background: none;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.back-link-btn:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.nav-title {
+  font-size: 16px;
+  color: #9ca3af;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Main Split Screen Layout */
+.profile-main-container {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+/* Left Hero Panel */
+.profile-left-hero {
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
+  padding: 40px 20px;
+  border-radius: 16px;
+  height: fit-content;
+  border: 1px solid #374151;
+}
+
+.avatar-frame {
+  width: 180px;
+  height: 180px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 3px solid #3b82f6;
+}
+
+.user-main-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-display-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.user-status-tag {
+  color: #10b981;
+  font-size: 14px;
+  background-color: rgba(16, 185, 129, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Right Content Panel */
+.profile-right-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #e5e7eb;
+  border-bottom: 2px solid #374151;
+  padding-bottom: 10px;
+}
+
+/* Metrics Full-Width Rows */
+.metrics-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.metric-row-card {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.metric-row-card:hover {
+  transform: translateX(5px);
+  border-color: #4b5563;
+}
+
+.metric-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.metric-info p {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.metric-badge {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #1f2937;
+  padding: 10px 24px;
+  border-radius: 8px;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Colors for left borders to keep track of platforms */
+.leetcode-row { border-left: 5px solid #f59e0b; }
+.leetcode-row .metric-badge { color: #f59e0b; }
+
+.codeforces-row { border-left: 5px solid #ef4444; }
+.codeforces-row .metric-badge { color: #ef4444; }
+
+.air-row { border-left: 5px solid #10b981; }
+.air-row .metric-badge { color: #10b981; }
+
+/* Responsive adjustments for Tablets/Mobiles */
+@media (max-width: 768px) {
+  .profile-main-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .profile-left-hero {
+    max-width: 100%;
+  }
+  .metric-row-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}

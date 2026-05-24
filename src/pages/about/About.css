@@ -1,0 +1,200 @@
+/* Heavy About Me Outer Block */
+.heavy-about-section {
+  background: linear-gradient(135deg, #111827 0%, #0f172a 100%);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Header Section Alignment */
+.about-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 20px;
+}
+
+.about-title-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.about-icon-badge {
+  background-color: rgba(59, 130, 246, 0.1);
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.heavy-about-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.about-sub-heading {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Availability Tag with Pulse Effect */
+.availability-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.availability-tag span {
+  font-size: 12px;
+  color: #34d399;
+  font-weight: 600;
+}
+
+.green-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  animation: about-pulse 2s infinite;
+}
+
+@keyframes about-pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Two-column Split Grid */
+.about-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.about-bio-block h3 {
+  font-size: 18px;
+  color: #3b82f6;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.bio-paragraph {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* 2x2 Matrix Stat Boxes */
+.about-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.matrix-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 20px 10px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.matrix-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.matrix-subtitle {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Technical Expertise Block Styling */
+.skills-matrix-wrapper h4 {
+  font-size: 14px;
+  color: #e2e8f0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 8px;
+}
+
+.skills-category-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill-cat-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cat-label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+  width: 150px;
+  min-width: 150px;
+}
+
+.skills-bundle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background-color: #1a202c;
+  border: 1px solid #2d3748;
+}
+
+/* Color codes for personal professional tags */
+.cpp { color: #00599c; border-color: rgba(0, 89, 156, 0.3); }
+.js { color: #f7df1e; border-color: rgba(247, 223, 30, 0.3); }
+.html { color: #e34f26; border-color: rgba(227, 79, 38, 0.3); }
+.react { color: #61dafb; border-color: rgba(97, 218, 251, 0.3); }
+.node { color: #68a063; border-color: rgba(104, 160, 99, 0.3); }
+.express { color: #cbd5e1; border-color: rgba(203, 213, 225, 0.3); }
+.git { color: #f05032; border-color: rgba(240, 80, 50, 0.3); }
+.mongo { color: #47a248; border-color: rgba(71, 162, 72, 0.3); }
+.rest { color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); }
+
+/* Responsive break settings */
+@media (max-width: 768px) {
+  .about-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-cat-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

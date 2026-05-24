@@ -1,0 +1,20 @@
+.navbar{
+   display: flex;
+   background-color: rebeccapurple;
+   justify-content: space-between;
+   padding-left: 20px;
+   position: sticky;
+   top: 0px;
+   margin-top: -10px;
+   z-index: 200;
+}
+.sec-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    padding-right: 20px;
+}
+.link-nav{
+    color: white;
+    text-decoration: none;
+}

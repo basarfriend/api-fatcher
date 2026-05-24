@@ -1,0 +1,238 @@
+/* Outer Section Box */
+.heavy-education-section {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+/* ⚠️ Dummy Notice Banner inside Education Block */
+.education-dummy-banner {
+  background-color: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 8px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.education-dummy-banner .banner-alert-icon {
+  font-size: 18px;
+}
+
+.education-dummy-banner p {
+  font-size: 13px;
+  color: #fbbf24;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.education-dummy-banner strong {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.education-dummy-banner span {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Header Elements Alignment */
+.section-main-header {
+  margin-bottom: 35px;
+}
+
+.section-title-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.section-sub-text {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Core Vertical Timeline Structure */
+.education-timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  border-left: 2px dashed #374151; /* Beautiful Dashed Line track */
+  padding-left: 30px;
+  margin-left: 15px;
+}
+
+/* Individual Timeline Node Blocks */
+.timeline-node-card {
+  position: relative;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 14px;
+  padding: 24px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.timeline-node-card:hover {
+  transform: translateX(4px);
+}
+
+/* Hover Border customization based on state */
+.upcoming-track:hover { border-color: #3b82f6; }
+.completed-track:hover { border-color: #10b981; }
+
+/* Timeline Bullet Dot Glow elements */
+.node-badge-glow {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  left: -38px;
+  top: 30px;
+  background-color: #111827;
+  border: 3px solid #fff;
+}
+
+.blue-glow {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+.green-glow {
+  border-color: #10b981;
+  box-shadow: 0 0 10px #10b981;
+}
+
+/* Header row layout formatting inside node card */
+.node-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 12px;
+}
+
+.institution-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.college-name {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Category Level Badge Tags */
+.academic-level-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.degree-tag {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+}
+
+.schooling-tag {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+/* Academic Duration tags styling */
+.academic-duration {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.enrollment-pending {
+  background-color: rgba(59, 130, 246, 0.08);
+  color: #38bdf8;
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.clear-passed {
+  background-color: rgba(16, 185, 129, 0.08);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Core paragraph details description */
+.node-description-text {
+  font-size: 13.5px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Focus Tech Tags list */
+.focus-skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.focus-badge {
+  font-size: 11px;
+  color: #cbd5e1;
+  background-color: #111827;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+}
+
+/* Performance Score Footer panel */
+.academic-score-footer {
+  font-size: 13px;
+  color: #94a3b8;
+  background-color: #111827;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-left: 3px solid #10b981;
+  width: fit-content;
+}
+
+.academic-score-footer strong {
+  color: #ffffff;
+  margin-left: 4px;
+}
+
+/* Media Query breakpoints overrides for mobile screens */
+@media (max-width: 800px) {
+  .node-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .education-timeline-container {
+    padding-left: 20px;
+  }
+  .node-badge-glow {
+    left: -28px;
+  }
+}

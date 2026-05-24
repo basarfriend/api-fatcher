@@ -1,0 +1,199 @@
+/* Outer Section Container */
+.real-projects-section {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+/* ⚠️ Dummy Warning Styling inside Project Section */
+.project-dummy-banner {
+  background-color: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 8px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.banner-alert-icon {
+  font-size: 18px;
+}
+
+.project-dummy-banner p {
+  font-size: 13px;
+  color: #fbbf24;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.project-dummy-banner strong {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.project-dummy-banner span {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Header Alignment */
+.section-main-header {
+  margin-bottom: 30px;
+}
+
+.section-title-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.section-sub-text {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Multi-Column Project Matrix Grid - Perfect for 10 cards */
+.projects-display-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 24px;
+}
+
+/* Individual Card Styling */
+.individual-project-card {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.individual-project-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6; /* Modern Blue borders on hover */
+}
+
+/* Top Meta Row inside Card */
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.proj-category-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.proj-status-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.active-status {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+.review-status {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+/* Text Elements Inside Project Card */
+.proj-title {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.proj-desc {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  flex-grow: 1; 
+}
+
+/* Technology Stack Badges Row */
+.proj-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.tech-badge {
+  font-size: 11px;
+  color: #cbd5e1;
+  background-color: #111827;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+}
+
+/* Interactive Action Link Controls */
+.proj-links-row {
+  display: flex;
+  gap: 12px;
+}
+
+.action-link {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-align: center;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.repo-btn {
+  background-color: #111827;
+  color: #cbd5e1;
+  border: 1px solid #374151;
+}
+
+.repo-btn:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.demo-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.demo-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive screen layout query logic */
+@media (max-width: 900px) {
+  .projects-display-grid {
+    grid-template-columns: 1fr; 
+  }
+}
