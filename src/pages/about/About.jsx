@@ -1,10 +1,14 @@
 import React from 'react'
 import './About.css'
+import { useNavigate } from 'react-router-dom'
 const About = () => {
-
+const navigate = useNavigate()
   return <>
   <section className="dashboard-section heavy-about-section">
   {/* Header with Title and Professional Status */}
+  <button className="back-link-btn" onClick={() => navigate(-1)}>
+          ← Back to Dashboard
+        </button>
   <div className="about-header-wrapper">
     <div className="about-title-left">
       <span className="about-icon-badge">👨‍💻</span>

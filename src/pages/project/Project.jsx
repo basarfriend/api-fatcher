@@ -1,11 +1,14 @@
 import React from 'react'
-import { Link, Links } from 'react-router-dom'
-import '/home/basar/reactBASAR/src/pages/project/project.css' 
+import { Link, Links, useNavigate } from 'react-router-dom'
+import '/home/basar/reactBASAR/src/pages/project/project.css'
 const Project = () => {
+  const navigate = useNavigate()
   return <>
   
   <section className="dashboard-section real-projects-section">
-  
+  <button className="back-link-btn" onClick={() => navigate(-1)}>
+          ← Back to Dashboard
+        </button>
   {/* ⚠️ Top Notice Banner */}
   <div className="project-dummy-banner">
     <span className="banner-alert-icon">⚠️</span>

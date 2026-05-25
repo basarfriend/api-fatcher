@@ -1,9 +1,13 @@
 import React from 'react'
 import './Education.css'
+import { useNavigate } from 'react-router-dom'
 const Education = () => {
+  const navigate = useNavigate()
   return (
     <section className="dashboard-section heavy-education-section">
-  
+  <button className="back-link-btn" onClick={() => navigate(-1)}>
+          ← Back to Dashboard
+        </button>
   {/* ⚠️ Top Notice Banner */}
   <div className="education-dummy-banner">
     <span className="banner-alert-icon">⚠️</span>
